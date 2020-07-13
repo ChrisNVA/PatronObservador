@@ -17,9 +17,11 @@ class Observador{
 const txtPrincipal = document.getElementById("principal");
 const txtUno = document.getElementById("uno");
 const txtDos = document.getElementById("dos");
+const txtTres = document.getElementById("tres");
 
 const observador = new Observador();
 observador.suscribe(txtUno);
 observador.suscribe(txtDos);
+observador.suscribe(txtTres);
 
 txtPrincipal.addEventListener('keyup',(event) => observador.notify(event.target.value));
